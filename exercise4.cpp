@@ -7,3 +7,19 @@ mathematical definition of the Fibonacci number is:
 
 /*4 - B: Write a function that "returns" more than one value. What the function does
 isn't actually important.*/
+
+#include <iostream>
+
+using namespace std;
+
+int fib(u_int num){
+    if(num <= 1) return 1;
+    else return fib(num - 2) + fib(num - 1);
+}
+
+int main(int argc, char *argv[]){
+    u_int num = 5;
+    cout << "fib(" << num << ") = " << fib(num) << '\n';
+
+    return 0;
+}

@@ -15,3 +15,53 @@ Example snapshot:
     5 10
     5/10 = 0.5
 */
+
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv[]){
+    char selection;
+    double op1, op2;
+
+    cout << "Select one of the following options\n";
+    cout << "\tPress ‘a’ for addition\n";
+    cout << "\tPress ‘s’ for subtraction\n";
+    cout << "\tPress ‘m’ for multiplication\n";
+    cout << "\tPress ‘d’ for division\n";
+
+    cin >> selection;
+
+    
+    switch (selection){
+    case 'a': case 'A':
+        cout << "Provide two numbers\n";
+        cin >> op1 >> op2;
+
+        cout << op1 << " + " << op2 << " = " << op1 + op2 << '\n';
+        break;
+    case 's': case 'S':
+        cout << "Provide two numbers\n";
+        cin >> op1 >> op2;
+
+        cout << op1 << " - " << op2 << " = " << op1 - op2 << '\n';
+        break;
+    case 'm': case 'M':
+        cout << "Provide two numbers\n";
+        cin >> op1 >> op2;
+
+        cout << op1 << " * " << op2 << " = " << op1 * op2 << '\n';
+        break;
+    case 'd': case 'D':
+        cout << "Provide two numbers\n";
+        cin >> op1 >> op2;
+
+        cout << op1 << " / " << op2 << " = " << op1 / op2 << '\n';
+        break;
+    default:
+        cout << "Invalid option.\n";
+        break;
+    }
+
+    return 0;
+}
