@@ -1,0 +1,34 @@
+Git is a distributed version control system. It's primary function is to track changes in files and store them.
+This give the user the ability to return to any previous point in the code provided that they committed the changes.
+
+Git is not github. git is not the "offline version of github" either. Github, is a code sharing platform that has
+a really nice integration with git.
+
+When using git, you are able to "push" code to and "pull" code from remote repos also using git. github can provide
+that remote repo. You can pull code from a remote github repo and push to a github repo (provided you have access)
+
+Why is this all useful? idk, it's fun to think about. It is also necessary to know if you want to work in a
+development environment. Below are some useful links that talk about git, github, and github classroom (which we will
+also use in this course).
+
+Learn Git In 15 Minutes: https://www.youtube.com/watch?v=USjZcfj8yxE
+Learn Github In 20 Minutes: https://www.youtube.com/watch?v=nhNq2kIvi9s
+GitHub Classroom: How students complete assignments: https://www.youtube.com/watch?v=ObaFRGp_Eko
+
+They aren't mandetory, but it will be really nice if you can look at them.
+
+If you are on windows, you can take advantage of github desktop.
+
+Here's the short shortened version of the first video. Git is simple enough to use:
+
+# add changes you made to the repo
+# you can specify to add *all* changes by
+git add .
+# or specific changes by
+git add <file1> <file2> ...
+
+# commit changes
+git commit -m "add your commit message here"
+
+# upload the changes you made to the remote github repo (the one I will be looking at)
+git push
